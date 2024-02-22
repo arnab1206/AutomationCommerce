@@ -1,11 +1,10 @@
-
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+
 # creating class to add user
 class AddUser:
-
     def __init__(self, driver):
         self.driver = driver
         self.wait = WebDriverWait(driver, 10)
@@ -16,7 +15,7 @@ class AddUser:
         elem.send_keys(fname)
 
     # setting last name
-    def setlname(self,lname):
+    def setlname(self, lname):
         elem = self.wait.until(EC.visibility_of_element_located((By.XPATH, "//*[@id='billing_last_name']")))
         elem.send_keys(lname)
 
@@ -45,7 +44,7 @@ class AddUser:
         country_element = self.wait.until(EC.visibility_of_element_located((By.XPATH, "//*[@id='select2-chosen-1']")))
         return country_element.text
 
-    #setting address line 1
+    # setting address line 1
     def setadrs1(self, adrs1):
         elem = self.wait.until(EC.visibility_of_element_located((By.XPATH, "//*[@id='billing_address_1']")))
         elem.send_keys(adrs1)
@@ -79,5 +78,3 @@ class AddUser:
     def clickplaceorder(self):
         elem = self.wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@id='place_order']")))
         elem.click()
-
-

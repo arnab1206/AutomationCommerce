@@ -1,12 +1,12 @@
 import time
 import re
+from selenium.webdriver.common.by import By
+
+from utilities.customerlogger import LogGen
+from utilities.readproperties import ReadConfig
 
 from pages.HomePage import HomePage
 from pages.HomePage import SliderAutomation
-from utilities.customerlogger import LogGen
-from utilities.readproperties import ReadConfig
-from selenium.webdriver.common.by import By
-
 from pages.HomePage import DropdownAutomation
 from pages.AddUser import AddUser
 
@@ -24,16 +24,25 @@ class Test_01_ShopTC:
         self.logger.info("*************** Clicking into shop icon *****************")
         self.hp.clickShop()
         self.slider_automator = SliderAutomation(self.driver)
-        self.slider_automator.move_slider("//*[@id='woocommerce_price_filter-2']/form/div/div[1]/span[2]", -25, 0)
+        self.slider_automator.move_slider("//*[@id='woocommerce_price_filter-2']/form/div/div[1]/span[2]", -23, 0)
         self.hp.filter()
 
         self.logger.info("*************** Showing the filtered product names *****************")
+
+        # Creating an empty string to verify the test case
+        filtered_product_names = []
+        expected_string = "Android Quick Start Guide, Functional Programming in JS, HTML5 Forms, HTML5 WebApp Develpment, JS Data Structures and Algorithm, Mastering JavaScript, Thinking in HTML"
+
         # Print the titles of filtered products
         filtered_products = self.driver.find_elements(By.XPATH, "//*[@id='content']/ul//a[1]/h3")
 
         for product in filtered_products:
-            print(product.text)
-            assert product.text
+            filtered_product_names.append(product.text)
+        print(", ".join(filtered_product_names))
+
+        for product in filtered_products:
+            assert product.text in expected_string, f"Expected '{product.text}' to be in '{expected_string}'"
+
         self.logger.info("*************** Test Case Passed *****************")
         self.driver.quit()
 
@@ -49,11 +58,20 @@ class Test_01_ShopTC:
 
         self.hp.android()
         self.logger.info("*************** Showing the filtered product names as per Product Category*****************")
+
+        filtered_product_names = []
+        expected_string = "Android Quick Start Guide"
+
         # Print the titles of filtered products
         filtered_products = self.driver.find_elements(By.XPATH, "//*[@id='content']/ul//a[1]/h3")
+
         for product in filtered_products:
-            print(product.text)
-            assert product.text
+            filtered_product_names.append(product.text)
+            print(", ".join(filtered_product_names))
+
+        for product in filtered_products:
+            assert product.text in expected_string, f"Expected '{product.text}' to be in '{expected_string}'"
+
         self.logger.info("*************** Test Case Passed *****************")
         self.driver.quit()
 
@@ -71,11 +89,16 @@ class Test_01_ShopTC:
         self.da.move_dropdown("Sort by popularity")
         self.logger.info("*************** Sorting by popularity *****************")
 
+        # filtered_product_names = []
+        expected_string = "Android Quick Start Guide"
+
         # Print the titles of filtered products
         filtered_products = self.driver.find_elements(By.XPATH, "//*[@id='content']/ul//a[1]/h3")
-        for product in filtered_products:
-            print(product.text)
-            assert product.text
+
+        first_product_text = filtered_products[0].text
+        print(first_product_text)
+        assert first_product_text == expected_string
+
         self.logger.info("*************** Test Case Passed *****************")
         self.driver.quit()
 
@@ -93,11 +116,16 @@ class Test_01_ShopTC:
         self.da.move_dropdown("Sort by average rating")
         self.logger.info("*************** Sorting by average rating *****************")
 
+        filtered_product_names = []
+        expected_string = "Selenium Ruby"
+
         # Print the titles of filtered products
         filtered_products = self.driver.find_elements(By.XPATH, "//*[@id='content']/ul//a[1]/h3")
-        for product in filtered_products:
-            print(product.text)
-            assert product.text
+
+        first_product_text = filtered_products[0].text
+        print(first_product_text)
+        assert first_product_text == expected_string
+
         self.logger.info("*************** Test Case Passed *****************")
         self.driver.quit()
 
@@ -115,11 +143,16 @@ class Test_01_ShopTC:
         self.da.move_dropdown("Sort by newness")
         self.logger.info("*************** Sorting by Newness *****************")
 
+        filtered_product_names = []
+        expected_string = "HTML5 WebApp Develpment"
+
         # Print the titles of filtered products
         filtered_products = self.driver.find_elements(By.XPATH, "//*[@id='content']/ul//a[1]/h3")
-        for product in filtered_products:
-            print(product.text)
-            assert product.text
+
+        first_product_text = filtered_products[0].text
+        print(first_product_text)
+        assert first_product_text == expected_string
+
         self.logger.info("*************** Test Case Passed *****************")
         self.driver.quit()
 
@@ -137,11 +170,16 @@ class Test_01_ShopTC:
         self.da.move_dropdown("Sort by price: low to high")
         self.logger.info("*************** Sorting by low to high *****************")
 
+        filtered_product_names = []
+        expected_string = "JS Data Structures and Algorithm"
+
         # Print the titles of filtered products
         filtered_products = self.driver.find_elements(By.XPATH, "//*[@id='content']/ul//a[1]/h3")
-        for product in filtered_products:
-            print(product.text)
-            assert product.text
+
+        first_product_text = filtered_products[0].text
+        print(first_product_text)
+        assert first_product_text == expected_string
+
         self.logger.info("*************** Test Case Passed *****************")
         self.driver.quit()
 
@@ -159,11 +197,16 @@ class Test_01_ShopTC:
         self.da.move_dropdown("Sort by price: high to low")
         self.logger.info("*************** Sorting by high to low *****************")
 
+        filtered_product_names = []
+        expected_string = "Selenium Ruby"
+
         # Print the titles of filtered products
         filtered_products = self.driver.find_elements(By.XPATH, "//*[@id='content']/ul//a[1]/h3")
-        for product in filtered_products:
-            print(product.text)
-            assert product.text
+
+        first_product_text = filtered_products[0].text
+        print(first_product_text)
+        assert first_product_text == expected_string
+
         self.logger.info("*************** Test Case Passed *****************")
         self.driver.quit()
 
@@ -185,8 +228,10 @@ class Test_01_ShopTC:
             time.sleep(2)
             # Getting the price of the product from the next page
             element_name = self.driver.find_element(By.XPATH, "//*[@class='product_title entry-title']")
-            old_price_element = self.driver.find_element(By.XPATH, "//p/del/span[@class='woocommerce-Price-amount amount']")
-            new_price_element = self.driver.find_element(By.XPATH, "//p/ins/span[@class='woocommerce-Price-amount amount']")
+            old_price_element = self.driver.find_element(By.XPATH,
+                                                         "//p/del/span[@class='woocommerce-Price-amount amount']")
+            new_price_element = self.driver.find_element(By.XPATH,
+                                                         "//p/ins/span[@class='woocommerce-Price-amount amount']")
             price_old = old_price_element.text
             price_new = new_price_element.text
             element = element_name.text
@@ -233,12 +278,12 @@ class Test_01_ShopTC:
         confirm_title = self.driver.find_element(By.CLASS_NAME, "woocommerce-thankyou-order-received")
         confirm_title_text = confirm_title.text
         if confirm_title_text == "Thank you. Your order has been received.":
-                self.driver.close()
-                print({confirm_title_text})
-                assert True
+            self.driver.close()
+            print({confirm_title_text})
+            assert True
         else:
-                self.driver.close()
-                assert False
+            self.driver.close()
+            assert False
         self.logger.info("*************** Test Case Passed *****************")
         self.driver.quit()
 
@@ -279,12 +324,12 @@ class Test_01_ShopTC:
         confirm_title = self.driver.find_element(By.CLASS_NAME, "woocommerce-thankyou-order-received")
         confirm_title_text = confirm_title.text
         if confirm_title_text == "Thank you. Your order has been received.":
-                self.driver.close()
-                print({confirm_title_text})
-                assert True
+            self.driver.close()
+            print({confirm_title_text})
+            assert True
         else:
-                self.driver.close()
-                assert False
+            self.driver.close()
+            assert False
         self.logger.info("*************** Test Case Passed *****************")
         self.driver.quit()
 
@@ -305,7 +350,7 @@ class Test_01_ShopTC:
         self.adduser = AddUser(self.driver)
         self.adduser.countrydrpdwn()
         time.sleep(2)
-        self.adduser.countrydrpdwnselect(104)
+        self.adduser.countrydrpdwnselect(103)
         time.sleep(2)
 
         # Get the tax and subtotal values
@@ -327,4 +372,3 @@ class Test_01_ShopTC:
             print({expected_tax_rate})
             self.logger.info("*************** Country is not India *****************")
             assert False
-

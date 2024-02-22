@@ -164,3 +164,148 @@
 2024-02-22 10:54:30,221 - root - INFO - *************** Rejecting the consent popup *****************
 2024-02-22 10:54:30,354 - root - INFO - *************** Clicking into shop icon *****************
 2024-02-22 10:54:42,574 - root - INFO - *************** Country is not India *****************
+2024-02-22 14:22:20,678 - root - INFO - *************** Test_01 *****************
+2024-02-22 14:22:25,315 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 14:22:25,553 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 14:22:30,532 - root - INFO - *************** Showing the filtered product names *****************
+2024-02-22 14:22:30,890 - root - INFO - *************** Test Case Passed *****************
+2024-02-22 14:22:35,684 - root - INFO - *************** Test_02 *****************
+2024-02-22 14:22:40,121 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 14:22:40,358 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 14:22:43,664 - root - INFO - *************** Showing the filtered product names as per Product Category*****************
+2024-02-22 14:22:43,703 - root - INFO - *************** Test Case Passed *****************
+2024-02-22 14:22:48,247 - root - INFO - *************** Test_03 *****************
+2024-02-22 14:22:56,329 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 14:22:56,537 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 14:23:00,082 - root - INFO - *************** Sorting by popularity *****************
+2024-02-22 14:23:00,443 - root - INFO - *************** Test Case Passed *****************
+2024-02-22 14:23:05,524 - root - INFO - *************** Test_04 *****************
+2024-02-22 14:23:10,087 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 14:23:10,322 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 14:23:13,935 - root - INFO - *************** Sorting by average rating *****************
+2024-02-22 14:23:14,208 - root - INFO - *************** Test Case Passed *****************
+2024-02-22 14:23:19,003 - root - INFO - *************** Test_05 *****************
+2024-02-22 14:23:22,927 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 14:23:23,159 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 14:23:26,992 - root - INFO - *************** Sorting by Newness *****************
+2024-02-22 14:23:27,401 - root - INFO - *************** Test Case Passed *****************
+2024-02-22 14:23:32,047 - root - INFO - *************** Test_06 *****************
+2024-02-22 14:23:36,059 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 14:23:36,268 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 14:23:39,595 - root - INFO - *************** Sorting by low to high *****************
+2024-02-22 14:23:39,986 - root - INFO - *************** Test Case Passed *****************
+2024-02-22 14:23:44,606 - root - INFO - *************** Test_07 *****************
+2024-02-22 14:23:48,665 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 14:23:48,884 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 14:23:52,503 - root - INFO - *************** Sorting by high to low *****************
+2024-02-22 14:23:53,119 - root - INFO - *************** Test Case Passed *****************
+2024-02-22 14:23:57,747 - root - INFO - *************** Test_09 *****************
+2024-02-22 14:24:01,681 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 14:24:01,912 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 14:24:03,937 - root - INFO - *************** Checking the Sale Products prices *****************
+2024-02-22 14:24:11,693 - root - INFO - *************** Test Case Passed *****************
+2024-02-22 14:24:16,485 - root - INFO - *************** Test_10 *****************
+2024-02-22 14:24:20,530 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 14:24:20,749 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 14:24:29,443 - root - INFO - *************** Add customer details *****************
+2024-02-22 14:24:35,298 - root - INFO - *************** Test Case Passed *****************
+2024-02-22 14:24:39,885 - root - INFO - *************** Test_11 *****************
+2024-02-22 14:24:43,708 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 14:24:43,911 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 14:24:53,404 - root - INFO - *************** Add customer details *****************
+2024-02-22 14:24:59,711 - root - INFO - *************** Test Case Passed *****************
+2024-02-22 14:25:04,610 - root - INFO - *************** Test_12 *****************
+2024-02-22 14:25:09,043 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 14:25:09,264 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 14:25:22,134 - root - INFO - *************** Country is India *****************
+2024-02-22 14:37:42,930 - root - INFO - *************** Test_01 *****************
+2024-02-22 14:37:47,294 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 14:37:47,537 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 14:37:52,409 - root - INFO - *************** Showing the filtered product names *****************
+2024-02-22 14:39:30,999 - root - INFO - *************** Test_01 *****************
+2024-02-22 14:39:35,145 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 14:39:35,351 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 14:39:39,404 - root - INFO - *************** Showing the filtered product names *****************
+2024-02-22 14:54:27,472 - root - INFO - *************** Showing the filtered product names *****************
+2024-02-22 14:57:28,174 - root - INFO - *************** Test_01 *****************
+2024-02-22 14:57:33,320 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 14:57:33,777 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 14:57:39,391 - root - INFO - *************** Showing the filtered product names *****************
+2024-02-22 14:57:40,001 - root - INFO - *************** Test Case Passed *****************
+2024-02-22 14:58:04,586 - root - INFO - *************** Test_01 *****************
+2024-02-22 14:58:08,934 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 14:58:09,259 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 14:58:14,636 - root - INFO - *************** Showing the filtered product names *****************
+2024-02-22 14:58:14,965 - root - INFO - *************** Test Case Passed *****************
+2024-02-22 16:06:43,926 - root - INFO - *************** Test_01 *****************
+2024-02-22 16:06:48,653 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 16:06:48,805 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 16:06:52,057 - root - INFO - *************** Showing the filtered product names *****************
+2024-02-22 16:08:21,417 - root - INFO - *************** Test_01 *****************
+2024-02-22 16:08:25,360 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 16:08:25,494 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 16:08:28,504 - root - INFO - *************** Showing the filtered product names *****************
+2024-02-22 16:08:50,197 - root - INFO - *************** Test_01 *****************
+2024-02-22 16:08:54,148 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 16:08:54,291 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 16:08:57,312 - root - INFO - *************** Showing the filtered product names *****************
+2024-02-22 16:08:57,428 - root - INFO - *************** Test Case Passed *****************
+2024-02-22 16:14:46,662 - root - INFO - *************** Test_01 *****************
+2024-02-22 16:14:51,512 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 16:14:51,652 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 16:14:54,673 - root - INFO - *************** Showing the filtered product names *****************
+2024-02-22 16:14:54,805 - root - INFO - *************** Test Case Passed *****************
+2024-02-22 16:14:58,876 - root - INFO - *************** Test_02 *****************
+2024-02-22 16:15:02,729 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 16:15:02,869 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 16:15:05,321 - root - INFO - *************** Showing the filtered product names as per Product Category*****************
+2024-02-22 16:15:05,353 - root - INFO - *************** Test Case Passed *****************
+2024-02-22 16:21:19,480 - root - INFO - *************** Test_03 *****************
+2024-02-22 16:21:23,306 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 16:21:23,451 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 16:21:26,485 - root - INFO - *************** Sorting by popularity *****************
+2024-02-22 16:22:25,249 - root - INFO - *************** Test_03 *****************
+2024-02-22 16:22:29,383 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 16:22:29,518 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 16:22:32,145 - root - INFO - *************** Sorting by popularity *****************
+2024-02-22 16:23:21,151 - root - INFO - *************** Test_03 *****************
+2024-02-22 16:23:25,753 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 16:23:25,884 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 16:23:31,387 - root - INFO - *************** Sorting by popularity *****************
+2024-02-22 16:24:32,523 - root - INFO - *************** Test_03 *****************
+2024-02-22 16:24:36,947 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 16:24:37,087 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 16:24:42,545 - root - INFO - *************** Sorting by popularity *****************
+2024-02-22 16:24:42,684 - root - INFO - *************** Test Case Passed *****************
+2024-02-22 16:25:46,164 - root - INFO - *************** Test_03 *****************
+2024-02-22 16:25:49,742 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 16:25:49,880 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 16:25:55,353 - root - INFO - *************** Sorting by popularity *****************
+2024-02-22 16:27:35,858 - root - INFO - *************** Test_03 *****************
+2024-02-22 16:27:39,400 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 16:27:39,533 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 16:27:45,040 - root - INFO - *************** Sorting by popularity *****************
+2024-02-22 16:28:35,539 - root - INFO - *************** Test_03 *****************
+2024-02-22 16:28:39,076 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 16:28:39,214 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 16:28:41,847 - root - INFO - *************** Sorting by popularity *****************
+2024-02-22 16:28:42,019 - root - INFO - *************** Test Case Passed *****************
+2024-02-22 16:30:28,068 - root - INFO - *************** Test_03 *****************
+2024-02-22 16:30:31,912 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 16:30:32,049 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 16:30:34,490 - root - INFO - *************** Sorting by popularity *****************
+2024-02-22 16:32:37,300 - root - INFO - *************** Test_03 *****************
+2024-02-22 16:32:41,567 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 16:32:41,710 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 16:32:44,508 - root - INFO - *************** Sorting by popularity *****************
+2024-02-22 16:32:44,534 - root - INFO - *************** Test Case Passed *****************
+2024-02-22 16:35:12,736 - root - INFO - *************** Test_04 *****************
+2024-02-22 16:35:16,657 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 16:35:16,795 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 16:35:19,539 - root - INFO - *************** Sorting by average rating *****************
+2024-02-22 16:35:19,567 - root - INFO - *************** Test Case Passed *****************
+2024-02-22 16:35:23,675 - root - INFO - *************** Test_05 *****************
+2024-02-22 16:35:27,433 - root - INFO - *************** Rejecting the consent popup *****************
+2024-02-22 16:35:27,587 - root - INFO - *************** Clicking into shop icon *****************
+2024-02-22 16:35:30,156 - root - INFO - *************** Sorting by Newness *****************
+2024-02-22 16:35:30,187 - root - INFO - *************** Test Case Passed *****************
