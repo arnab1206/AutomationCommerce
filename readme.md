@@ -412,5 +412,6 @@ Test cases covered are from the **Shop** category test cases only [/test-cases](
 
 ### Reports ### 
 After the test cases are completed, the reports are generated in the Reports folder with .html tag
+![image](https://github.com/arnab1206/AutomationCommerce/assets/52526974/2edb9396-ab16-41df-8320-219dbc138aa2)
 
 
