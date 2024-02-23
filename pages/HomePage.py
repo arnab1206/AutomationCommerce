@@ -10,7 +10,7 @@ class HomePage():
     SHOP_LINK = (By.LINK_TEXT, "https://practice.automationtesting.in/shop/")
 
     def __init__(self, driver):
-        self.driver=driver
+        self.driver = driver
         self.wait = WebDriverWait(driver, 10)  # Initialize WebDriverWait with a timeout of 10 seconds
 
     def clickShop(self):

@@ -210,7 +210,7 @@ class Test_01_ShopTC:
         self.logger.info("*************** Test Case Passed *****************")
         self.driver.quit()
 
-    def test_009(self, setup):
+    def test_008(self, setup):
         self.logger.info("*************** Test_09 *****************")
         self.driver = setup
         self.driver.get(self.baseURL)
@@ -240,7 +240,7 @@ class Test_01_ShopTC:
         self.logger.info("*************** Test Case Passed *****************")
         self.driver.quit()
 
-    def test_010(self, setup):
+    def test_009(self, setup):
         self.logger.info("*************** Test_10 *****************")
         self.driver = setup
         self.driver.get(self.baseURL)
@@ -287,7 +287,7 @@ class Test_01_ShopTC:
         self.logger.info("*************** Test Case Passed *****************")
         self.driver.quit()
 
-    def test_011(self, setup):
+    def test_010(self, setup):
         self.logger.info("*************** Test_11 *****************")
         self.driver = setup
         self.driver.get(self.baseURL)
@@ -333,7 +333,7 @@ class Test_01_ShopTC:
         self.logger.info("*************** Test Case Passed *****************")
         self.driver.quit()
 
-    def test_012(self, setup):
+    def test_011(self, setup):
         self.logger.info("*************** Test_12 *****************")
         self.driver = setup
         self.driver.get(self.baseURL)
@@ -353,7 +353,7 @@ class Test_01_ShopTC:
         self.adduser.countrydrpdwnselect(103)
         time.sleep(2)
 
-        # Get the tax and subtotal values
+        # Getting the tax and subtotal values
         tax_value = self.driver.find_element(By.XPATH, "//*[@id='order_review']/table/tfoot/tr[2]/td/span").text
         subtotal_value = self.driver.find_element(By.XPATH, "//*[@id='order_review']/table/tfoot/tr[1]/td/span").text
 
